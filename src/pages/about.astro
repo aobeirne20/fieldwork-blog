@@ -1,0 +1,24 @@
+---
+import AboutHeroImage from '../assets/blog-placeholder-about.jpg';
+import Layout from '../layouts/BlogPost.astro';
+import { GITHUB_REPO } from '../consts';
+---
+
+<Layout
+	title="About"
+	description="Embedded firmware benchmarks and agent evaluation for Fieldwork."
+	pubDate={new Date('May 17 2026')}
+	heroImage={AboutHeroImage}
+>
+	<p>
+		Fieldwork evaluates coding agents on real embedded hardware: STM32 Nucleo boards, XMOS xcore devices,
+		and the tasks defined in the <a href={GITHUB_REPO}>fieldwork-firmware</a> repository.
+	</p>
+	<p>
+		Each benchmark bundles a rendered task, runs an agent in a sandboxed toolchain environment, and scores
+		the result with platform-specific observers (UART traces, VCD waveforms, monitor plugins, and more).
+	</p>
+	<p>
+		Use this blog for release notes, benchmark methodology, and write-ups on individual tasks and rollouts.
+	</p>
+</Layout>

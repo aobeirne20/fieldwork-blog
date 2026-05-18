@@ -1,0 +1,31 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { GITHUB_REPO, SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Fieldwork firmware</h1>
+			<p>
+				This blog covers embedded firmware benchmarks, agent rollouts on real hardware, and how we score
+				coding agents against STM32 and XMOS targets.
+			</p>
+			<p>
+				The main repo lives at <a href={GITHUB_REPO}>fieldwork-firmware</a>. Posts live under
+				<code>blog/src/content/blog/</code>.
+			</p>
+			<p>
+				<a href="/blog">Read the blog →</a>
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
