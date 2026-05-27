@@ -96,14 +96,24 @@ code {
 	background-color: rgb(var(--gray-light));
 	border-radius: 2px;
 }
-pre {
+pre,
+.astro-code {
 	padding: 1.5em;
 	border-radius: 8px;
-	font-size: 0.875em;
+	font-size: 14px;
 	line-height: 1.5;
 }
-pre > code {
-	all: unset;
+pre > code,
+.astro-code > code {
+	display: block;
+	padding: 0;
+	background: none;
+	border-radius: 0;
+	font-size: inherit;
+}
+.astro-code .line,
+.astro-code .line > span {
+	font-size: inherit;
 }
 blockquote {
 	border-left: 4px solid var(--accent);
