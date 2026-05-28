@@ -8,7 +8,7 @@ import HeaderLink from './HeaderLink.astro';
 <header>
 	<nav>
 		<a class="logo" href="/">
-			<Image src={fieldworkLogo} alt={SITE_TITLE} width={40} height={40} />
+			<Image src={fieldworkLogo} alt={SITE_TITLE} width={64} height={64} />
 		</a>
 		<div class="internal-links">
 			<HeaderLink href="/" class="fieldwork-link">Fieldwork</HeaderLink>
@@ -32,7 +32,7 @@ import HeaderLink from './HeaderLink.astro';
 	}
 	.logo img {
 		display: block;
-		height: 2.25rem;
+		height: 3.5rem;
 		width: auto;
 		filter: invert(1);
 	}
@@ -62,7 +62,7 @@ import HeaderLink from './HeaderLink.astro';
 		border-bottom-color: #ffffff;
 	}
 	.internal-links :global(a.fieldwork-link) {
-		font-size: 1.5rem;
+		font-size: 2rem;
 		font-weight: 700;
 	}
 </style>
