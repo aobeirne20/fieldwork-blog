@@ -1,14 +1,9 @@
 ---
-import { GITHUB_REPO } from '../consts';
-
 const today = new Date();
 ---
 
 <footer>
 	&copy; {today.getFullYear()} Fieldwork. All rights reserved.
-	<p>
-		<a href={GITHUB_REPO}>fieldwork-firmware</a> on GitHub
-	</p>
 </footer>
 <style>
 	footer {
@@ -17,8 +12,5 @@ const today = new Date();
 		border-top: 1px solid rgba(255, 255, 255, 0.35);
 		color: rgb(var(--gray));
 		text-align: center;
-	}
-	footer p {
-		margin: 0.75em 0 0;
 	}
 </style>

@@ -1,19 +1,20 @@
 ---
-import { GITHUB_REPO, SITE_TITLE } from '../consts';
+import { Image } from 'astro:assets';
+import fieldworkLogo from '../assets/fieldwork-logo.png';
+import { SITE_TITLE } from '../consts';
 import HeaderLink from './HeaderLink.astro';
 ---
 
 <header>
 	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
-		<div class="internal-links">
-			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/blog">Blog</HeaderLink>
-			<HeaderLink href="/about">About</HeaderLink>
-		</div>
-		<a class="github-link" href={GITHUB_REPO} target="_blank" rel="noopener noreferrer">
-			GitHub
+		<a class="logo" href="/">
+			<Image src={fieldworkLogo} alt={SITE_TITLE} width={40} height={40} />
 		</a>
+		<div class="internal-links">
+			<HeaderLink href="/" class="fieldwork-link">Fieldwork</HeaderLink>
+			<HeaderLink href="/about">About</HeaderLink>
+			<HeaderLink href="/blog">Blog</HeaderLink>
+		</div>
 	</nav>
 </header>
 <style>
@@ -23,14 +24,17 @@ import HeaderLink from './HeaderLink.astro';
 		background: #000000;
 		border-bottom: 1px solid rgba(255, 255, 255, 0.35);
 	}
-	h2 {
-		margin: 0;
-		font-size: 1em;
-	}
-
-	h2 a,
-	h2 a.active {
+	.logo {
+		display: flex;
+		align-items: center;
+		padding: 0.75em 0;
 		text-decoration: none;
+	}
+	.logo img {
+		display: block;
+		height: 2.25rem;
+		width: auto;
+		filter: invert(1);
 	}
 	nav {
 		display: flex;
@@ -38,18 +42,18 @@ import HeaderLink from './HeaderLink.astro';
 		justify-content: space-between;
 		gap: 1rem;
 	}
-	nav a {
+	.internal-links a {
 		padding: 1em 0.5em;
 		color: #ffffff;
 		border-bottom: 2px solid transparent;
 		text-decoration: none;
 	}
-	nav a.active {
+	.internal-links a.active {
 		text-decoration: none;
 		border-bottom-color: #ffffff;
 	}
-	.github-link {
-		font-size: 0.9em;
-		white-space: nowrap;
+	.internal-links :global(a.fieldwork-link) {
+		font-size: 1.2rem;
+		font-weight: 700;
 	}
 </style>
