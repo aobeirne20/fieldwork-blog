@@ -9,6 +9,11 @@ export default defineConfig({
 	// Set to your Vercel URL after first deploy (e.g. https://fieldwork-blog.vercel.app)
 	site: 'https://example.com',
 	integrations: [mdx(), sitemap()],
+	markdown: {
+		shikiConfig: {
+			theme: 'github-dark',
+		},
+	},
 	fonts: [
 		{
 			provider: fontProviders.local(),
