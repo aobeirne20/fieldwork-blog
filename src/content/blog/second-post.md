@@ -1,7 +1,7 @@
 ---
 title: 'Everyone loves colons: firmware'
 description: 'Today''s frontier coding agents look superhuman in big-tech Python land and stumble badly on bare-metal firmware. A look at where they break, starting with a simple GPIO strobe on the STM32 Nucleo-F446RE.'
-pubDate: 'May 28 2026''
+pubDate: 'May 28 2026'
 heroImage: '../../assets/first-post/nucleo-f446re.jpg'
 ---
 
