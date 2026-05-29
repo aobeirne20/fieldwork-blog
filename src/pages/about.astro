@@ -7,12 +7,12 @@ import { GITHUB_REPO } from '../consts';
 	title="The Company"
 >
 	<p>
-		Fieldwork evaluates coding agents on real embedded hardware: STM32 Nucleo boards, XMOS xcore devices,
-		and the tasks defined in the <a href={GITHUB_REPO}>fieldwork-firmware</a> repository.
+		Fieldwork was built out of shared, personal experience with the frustrations of devloping firmware, Fieldwork hopes to breathe fresh
+		life into an oft-neglected development field by enabling the improvement of AI models and agents at firmware tasks.
 	</p>
-	<p>
-		Built out of shared, personal experience with the frustrations of devloping firmware, Fieldwork hopes to breathe fresh
-		life into an often stubborn field by enabling the improvement of AI models and agents.
+	p>
+		With a benchmark built by consulting a multitude of industry professionals and subject matter experts, we've used that benchmark
+		to illustrate the current weaknesses of AI. in this field, and allow for the development of a learning environment
 	</p>
 	<div class="section-title">
 		<h1>The People</h1>
@@ -53,6 +53,17 @@ import { GITHUB_REPO } from '../consts';
 </Layout>
 
 <style>
+	:global(.prose) {
+		width: 920px;
+		max-width: calc(100% - 2em);
+	}
+
+	:global(.prose p),
+	:global(.prose li),
+	:global(.prose figcaption) {
+		font-size: 0.95rem;
+	}
+
 	.section-title {
 		margin-bottom: 1em;
 		padding: 1em 0;
