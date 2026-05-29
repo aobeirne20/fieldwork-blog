@@ -5,53 +5,65 @@ import { GITHUB_REPO } from '../consts';
 
 <Layout
 	title="The Company"
-	description="Embedded firmware benchmarks and agent evaluation for Fieldwork."
 >
 	<p>
 		Fieldwork evaluates coding agents on real embedded hardware: STM32 Nucleo boards, XMOS xcore devices,
 		and the tasks defined in the <a href={GITHUB_REPO}>fieldwork-firmware</a> repository.
 	</p>
 	<p>
-		Each benchmark bundles a rendered task, runs an agent in a sandboxed toolchain environment, and scores
-		the result with platform-specific observers (UART traces, VCD waveforms, monitor plugins, and more).
+		Built out of shared, personal experience with the frustrations of devloping firmware, Fieldwork hopes to breathe fresh
+		life into an often stubborn field by enabling the improvement of AI models and agents.
 	</p>
-	<p>
-		Use this blog for release notes, benchmark methodology, and write-ups on individual tasks and rollouts.
-	</p>
-	<h1>The People</h1>
+	<div class="section-title">
+		<h1>The People</h1>
+		<hr />
+	</div>
 	<div class="people-grid">
 		<article class="person-card">
 			<figure>
 				<div class="headshot-placeholder" role="img" aria-label="Headshot placeholder for Person 1"></div>
-				<figcaption>Person 1, Role</figcaption>
+				<figcaption>Tim Krasnoperov, Co-Founder / Technical Staff</figcaption>
 			</figure>
-			<p>Short bio for Person 1. Add a brief blurb describing their background and focus area.</p>
+			<p>Tim leads the company and focuses on the development of benchmark tasks </p>
 		</article>
 		<article class="person-card">
 			<figure>
 				<div class="headshot-placeholder" role="img" aria-label="Headshot placeholder for Person 2"></div>
-				<figcaption>Person 2, Role</figcaption>
+				<figcaption>August O'Beirne, Co-Founder / Technical Staff</figcaption>
 			</figure>
-			<p>Short bio for Person 2. Add a brief blurb describing their background and focus area.</p>
+			<p>August also contributes to benchmark tasks, performs PM duties, and builds </p>
 		</article>
 		<article class="person-card">
 			<figure>
 				<div class="headshot-placeholder" role="img" aria-label="Headshot placeholder for Person 3"></div>
-				<figcaption>Person 3, Role</figcaption>
+				<figcaption>Conlon Meek, Co-Founder / Technical Staff</figcaption>
 			</figure>
-			<p>Short bio for Person 3. Add a brief blurb describing their background and focus area.</p>
+			<p>Conlon is the electronics SME at Fieldwork, responsible for assmebling the apparatus that allows for
+			development of the benchmark and environment on real hardware</p>
 		</article>
 		<article class="person-card">
 			<figure>
 				<div class="headshot-placeholder" role="img" aria-label="Headshot placeholder for Person 4"></div>
-				<figcaption>Person 4, Role</figcaption>
+				<figcaption>Matt McCoolgan, Co-Founder / Technical Staff</figcaption>
 			</figure>
-			<p>Short bio for Person 4. Add a brief blurb describing their background and focus area.</p>
+			<p>Matt brings the hardware and software sides of this project together, primarily being responsible for
+			building cloud systems that access microcontroller hardware. Matt comes from ???</p>
 		</article>
 	</div>
 </Layout>
 
 <style>
+	.section-title {
+		margin-bottom: 1em;
+		padding: 1em 0;
+		text-align: center;
+		line-height: 1;
+	}
+
+	.section-title h1 {
+		margin: 0 0 0.5em 0;
+	}
+
 	.people-grid {
 		display: grid;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
