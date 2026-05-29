@@ -4,7 +4,7 @@ import { GITHUB_REPO } from '../consts';
 ---
 
 <Layout
-	title="About"
+	title="The Company"
 	description="Embedded firmware benchmarks and agent evaluation for Fieldwork."
 >
 	<p>
@@ -18,4 +18,76 @@ import { GITHUB_REPO } from '../consts';
 	<p>
 		Use this blog for release notes, benchmark methodology, and write-ups on individual tasks and rollouts.
 	</p>
+	<h1>The People</h1>
+	<div class="people-grid">
+		<article class="person-card">
+			<figure>
+				<div class="headshot-placeholder" role="img" aria-label="Headshot placeholder for Person 1"></div>
+				<figcaption>Person 1, Role</figcaption>
+			</figure>
+			<p>Short bio for Person 1. Add a brief blurb describing their background and focus area.</p>
+		</article>
+		<article class="person-card">
+			<figure>
+				<div class="headshot-placeholder" role="img" aria-label="Headshot placeholder for Person 2"></div>
+				<figcaption>Person 2, Role</figcaption>
+			</figure>
+			<p>Short bio for Person 2. Add a brief blurb describing their background and focus area.</p>
+		</article>
+		<article class="person-card">
+			<figure>
+				<div class="headshot-placeholder" role="img" aria-label="Headshot placeholder for Person 3"></div>
+				<figcaption>Person 3, Role</figcaption>
+			</figure>
+			<p>Short bio for Person 3. Add a brief blurb describing their background and focus area.</p>
+		</article>
+		<article class="person-card">
+			<figure>
+				<div class="headshot-placeholder" role="img" aria-label="Headshot placeholder for Person 4"></div>
+				<figcaption>Person 4, Role</figcaption>
+			</figure>
+			<p>Short bio for Person 4. Add a brief blurb describing their background and focus area.</p>
+		</article>
+	</div>
 </Layout>
+
+<style>
+	.people-grid {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 1.5rem;
+		margin-top: 1rem;
+	}
+
+	.person-card {
+		padding: 1rem;
+		border: 1px solid #d9d9d9;
+		border-radius: 0.75rem;
+	}
+
+	.person-card figure {
+		margin: 0 0 0.75rem;
+	}
+
+	.headshot-placeholder {
+		aspect-ratio: 1 / 1;
+		width: 100%;
+		border-radius: 0.75rem;
+		background: linear-gradient(135deg, #efefef, #d9d9d9);
+		margin-bottom: 0.5rem;
+	}
+
+	.person-card figcaption {
+		font-weight: 600;
+	}
+
+	.person-card p {
+		margin: 0;
+	}
+
+	@media (max-width: 768px) {
+		.people-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
