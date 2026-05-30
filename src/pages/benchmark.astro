@@ -1,28 +1,34 @@
 ---
-import Layout from '../layouts/PageWithTitle.astro';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
 ---
 
-<Layout
-	title="The Benchmark"
-	description="Overview of Fieldwork benchmark tasks and scoring methodology."
->
-	<style is:global>
-		.title {
-			display: none;
-		}
-		.prose {
-			padding-top: 2.5em;
-		}
-	</style>
-	<p>
-		<strong>Hang tight, the V1 benchmark is a work in progress.</strong>
-	</p>
-	<p>
-		We’re consulting with firmware engineers across a variety of domains to develop a benchmark which reflects the entire industry. 
-		Robotics, audio devices, medical devices, aerospace, drones, farming equipment, manufacturing, IoT, and much more.
-	</p>
-	<p>
-		If you are interested in being a contributor, email us at <a href="mailto:tk@fieldwrk.ai">tk@fieldwrk.ai</a>!
-		We’d love to put your name on our publication.
-	</p>
-</Layout>
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title="Benchmark | Fieldwork"
+			description="Overview of Fieldwork benchmark tasks and scoring methodology."
+		/>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<p>
+				<strong>Hang tight, the V1 benchmark is a work in progress.</strong>
+			</p>
+			<p>
+				We’re consulting with firmware engineers across a variety of domains to develop a benchmark which
+				reflects the entire industry. Robotics, audio devices, medical devices, aerospace, drones, farming
+				equipment, manufacturing, IoT, and much more.
+			</p>
+			<p>
+				If you are interested in being a contributor, email us at <a href="mailto:tk@fieldwrk.ai"
+					>tk@fieldwrk.ai</a
+				>! We’d love to put your name on our publication.
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
