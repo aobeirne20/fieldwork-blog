@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/PageWithTitle.astro';
 import { GITHUB_REPO } from '../consts';
+import augustPhoto from '../assets/august_photo.jpeg';
 ---
 
 <Layout
@@ -45,7 +46,7 @@ import { GITHUB_REPO } from '../consts';
 		</article>
 		<article class="person-card">
 			<figure>
-				<div class="headshot-placeholder" role="img" aria-label="Headshot placeholder for Person 2"></div>
+				<img class="headshot" src={augustPhoto.src} alt="August O'Beirne headshot" loading="lazy" />
 				<figcaption>
 					August O'Beirne, Co-Founder
 					<a
@@ -165,6 +166,14 @@ import { GITHUB_REPO } from '../consts';
 		width: 100%;
 		border-radius: 0.75rem;
 		background: linear-gradient(135deg, #efefef, #d9d9d9);
+		margin-bottom: 0.5rem;
+	}
+
+	.headshot {
+		aspect-ratio: 1 / 1;
+		width: 100%;
+		border-radius: 0.75rem;
+		object-fit: cover;
 		margin-bottom: 0.5rem;
 	}
 
