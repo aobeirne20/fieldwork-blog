@@ -7,7 +7,7 @@ heroImage: '../../assets/first-post/field.webp'
 
 In this post we will dive in on some concrete examples of a modern coding agent working with *firmware*, or embedded systems.
 
-Firmware is a bit of a fuzzy term, but we like to think it comes from a time when code was often shipped in ROM (read only memory) and couldn't be updated easily, making it feel less "soft" than traditional software. Nowadays this term seems to be used when writing low-level programs, usually dealing directly with electric signals flowing through a wire, on small embedded environments, or interfacing with peripheral devices that bridge software and physical interaction.
+Firmware is a fuzzy term, but we use it to mean low-level programs that usually run without an OS, dealing directly with electrical signals or running on small embedded systems.
 
 In these examples, we begin to illustrate how coding agents are often messing up on basic and routine tasks that firmware engineers encounter. We believe that this is a real weakness in these models, especially compared to how good they have gotten with the more typical web and application development work.
 
