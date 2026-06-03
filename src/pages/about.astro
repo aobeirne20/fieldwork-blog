@@ -2,6 +2,8 @@
 import Layout from '../layouts/PageWithTitle.astro';
 import { GITHUB_REPO } from '../consts';
 import augustPhoto from '../assets/august_photo.jpeg';
+import tkPhoto from '../assets/tk.webp';
+import conlonPhoto from '../assets/conlon.jpg';
 ---
 
 <Layout
@@ -21,7 +23,7 @@ import augustPhoto from '../assets/august_photo.jpeg';
 	<div class="people-grid">
 		<article class="person-card">
 			<figure>
-				<div class="headshot-placeholder" role="img" aria-label="Headshot placeholder for Person 1"></div>
+				<img class="headshot" src={tkPhoto.src} alt="Tim Krasnoperov headshot" loading="lazy" />
 				<figcaption>
 					Tim Krasnoperov, Co-Founder / CEO
 					<a
@@ -71,7 +73,7 @@ import augustPhoto from '../assets/august_photo.jpeg';
 		</article>
 		<article class="person-card">
 			<figure>
-				<div class="headshot-placeholder" role="img" aria-label="Headshot placeholder for Person 3"></div>
+				<img class="headshot" src={conlonPhoto.src} alt="Conlon Meek headshot" loading="lazy" />
 				<figcaption>
 					Conlon Meek, Co-Founder
 					<a
