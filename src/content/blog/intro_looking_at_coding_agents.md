@@ -2,7 +2,7 @@
 title: 'Intro: Looking at Coding Agents Developing Embedded Systems'
 description: 'Concrete examples of a modern coding agent on firmware—strobing, UART, and PWM on the STM32 Nucleo-F446RE—and where Opus 4.7 breaks on timing, interrupts, and low-level details.'
 pubDate: 'Jun 2 2026'
-heroImage: '../../assets/first-post/strobe-trajectories.png'
+heroImage: '../../assets/first-post/field.webp'
 ---
 
 In this post we will dive in on some concrete examples of a modern coding agent working with *firmware*, or embedded systems.
