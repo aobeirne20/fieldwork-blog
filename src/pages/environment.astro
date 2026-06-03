@@ -1,19 +1,25 @@
 ---
-import Layout from '../layouts/PageWithTitle.astro';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
 ---
 
-<Layout
-	title="Environment"
-	description="Details on the Fieldwork runtime, tooling, and hardware setup."
->
-	<p>
-		The Fieldwork environment is not yet generally available. For more information or to discuss early access
-		for your agents and models, please contact <a href="mailto:tk@fieldwrk.ai">tk@fieldwrk.ai</a>.
-	</p>
-</Layout>
-
-<style>
-	:global(.title) {
-		display: none;
-	}
-</style>
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title="Environment | Fieldwork"
+			description="Details on the Fieldwork runtime, tooling, and hardware setup."
+		/>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<p>
+				The Fieldwork environment is not yet generally available. For more information or to discuss early access
+				for your agents and models, please contact <a href="mailto:tk@fieldwrk.ai">tk@fieldwrk.ai</a>.
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
